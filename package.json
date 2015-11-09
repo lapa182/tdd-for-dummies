@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/lapa182/tdd-for-dummies#readme",
   "devDependencies": {
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.1.0",
     "istanbul": "^0.4.0",
     "mocha": "^2.3.3",
     "should": "^7.1.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
   }
 }
