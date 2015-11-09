@@ -3,6 +3,6 @@ A small repo for small tdd for dummies.
 
 ### TDD/BDD - Baby Steps
 Steps
-:   Make the code fail
-:   Write the code for a success fallback
-:   After success refactor if necessary.
+1. Make the code fail
+2. Write the code for a success fallback
+3. After success refactor if necessary.
