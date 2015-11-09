@@ -1,0 +1,25 @@
+{
+  "name": "tdd-for-dumies",
+  "version": "1.0.0",
+  "description": "A small repo for small tdd for dummies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w tests/**/*.js",
+    "coverage": "istanbul cover _mocha tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapa182/tdd-for-dummies.git"
+  },
+  "author": "Igo Lapa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lapa182/tdd-for-dummies/issues"
+  },
+  "homepage": "https://github.com/lapa182/tdd-for-dummies#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1"
+  }
+}
