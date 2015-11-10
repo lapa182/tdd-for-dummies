@@ -1,0 +1,39 @@
+@import "reset";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.form__container {
+    margin: 50px auto;
+}
+
+.form__container--input {
+    padding: 5px;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+.summoner__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.summoner__container--item {
+    list-style: none;
+
+    &:first-child {
+        margin-left: 0    ;
+    }
+}

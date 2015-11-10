@@ -2,8 +2,37 @@
 <html ng-app="riotApp">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>Teste</h1>
+    <main class="container">
+        <div class="row" ng-controller="formCtrl">
+            <form name="summonerForm" ng-submit="getSummoner()" class="form__container row" novalidate>
+                <fieldset>
+                    <div class="col-lg-10">
+                        <input type="text" ng-model="riotApp.summoner" placeholder="Insert the summoner to search." class="form__container--input" required>
+                    </div>
+                    <div class="col-lg-2">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="summoner__container">
+                        <li ng-repeat="summoner in summoners" class="summoner__container--item">
+                            <p><strong>Summoner:</strong> {{summoner.name}}</p>
+                            <p><strong>Level:</strong> {{summoner.summonerLevel}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
